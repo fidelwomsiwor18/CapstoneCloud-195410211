@@ -8,7 +8,7 @@ COPY default.conf /etc/nginx/sites-enabled/
 
 ADD https://github.com/fidelwomsiwor18/CapstoneCloud-195410211/raw/master/WebStatis-195410211.zip .
 RUN unzip WebStatis-195410211.zip 
-RUN mv WebStatis-195410211.zip/* .
+RUN mv WebStatis-195410211/* .
 RUN rm -rf WebStatis-195410211 WebStatis-195410211.zip
 
 EXPOSE 80
